@@ -19,18 +19,38 @@ body::-webkit-scrollbar {
   display: none;
 }
 
-
 header {
     background-color: lightblue;
     text-align: center;
-    font-family: 'lora';
     padding: 10px;
 }
+
+header h1 {
+    font-family: "cinzel";
+    font-size: 1.5em;
+}
 #sinopse {
-    background-color: rgb(156, 156, 247);
     max-width: 600px;
     text-align: center;
     margin: 10px auto;
+}
+
+#sinopse h2 {
+    font-family: "cinzel";
+    font-size: 1.3em;
+}
+
+img {
+    display: block;
+    max-width: 150px;
+    margin: auto;
+    margin-bottom: -20px;
+}
+
+p {
+    font-weight: normal;
+    font-size: 1em;
+    font-family: 'lora';
 }
 
 main {
@@ -65,15 +85,18 @@ main {
     gap: 20px;
     justify-content: center;
     align-items: flex-start;
-    max-width: 50vw;
+    max-width: 70vw;
     margin: auto;
+    margin-top: 20px;
 }
+
 article {
     flex: 0 0 calc(50% - 20px); /* duas colunas */
     background: white;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
     overflow: hidden;
+    
 }
 
 .mot:hover {
@@ -85,31 +108,26 @@ article {
     overflow: hidden;
     transition: max-height 0.4s ease, padding 0.4s ease;
     padding: 0 20px;
+    
 }
 
 label {
       display: block;
       padding: 15px 20px;
-      font: 18px;
+      text-align: center;
       font-weight: bold;
       cursor: pointer;
-      background-color: rgb(131, 82, 82);
-      transition: background 0.3s;
+      background: linear-gradient(to top, rgb(73, 153, 73), white, white);
+      
 }
 label:hover {
-      background: #d9d9d9;
+      background: linear-gradient(to bottom, rgb(73, 153, 73), white, white);
+      
 }
-
 input[type="checkbox"] {
     display: none;
 }
 input[type="checkbox"]:checked + label + .m {
-      max-height: 200px;
-      padding: 15px 20px
-}
-
-p {
-    margin: 0;
-      font-size: 14px;
-      color: #555;
+      max-height: 500px;
+      padding: 15px 20px;
 }
