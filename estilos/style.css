@@ -69,7 +69,7 @@ pointer-events: none;
     align-items: flex-start;
 }
 .perso {
-    flex: 0 1 calc(100px + 30%);
+    flex: 0 1 calc(350px + 15%);
     padding: 20px;
     border-radius: 10px;
     text-align: center;
@@ -96,7 +96,6 @@ pointer-events: none;
     gap: 20px;
     justify-content: center;
     align-items: flex-start;
-    max-width: 70vw;
     margin: auto;
     margin-top: 20px;
 }
@@ -109,7 +108,7 @@ pointer-events: none;
 }
 
 article {
-    flex: 0 1 calc(60px + 30%);
+    flex: 0 1 calc(120px + 20%);
     background: white;
     border-radius: 10px;
     box-shadow: 1px 4px 6px rgba(0,0,0,0.1);
